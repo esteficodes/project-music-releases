@@ -11,9 +11,10 @@ const albumArray = data.albums.items
 export const App = () => {
   return (
     <div>
-      {albumArray.map((albumArray) =>{
+      <h1>New albums & singles</h1>
+      {albumArray.map((album) =>{
         return ( 
-          <albumArray key={albumArray.name} name={albumArray.name} artist={albumArray.artists[0].name} picture={albumArray.images[0].url}/>
+          <Album key={album.name} name={album.name} artist={album.artists[0].name} picture={album.images[0].url} externalurls={album.artists[0].external_urls.spotify} albumurl={album.external_urls.spotify}/>
         )
       })}
     </div>
