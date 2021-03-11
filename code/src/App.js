@@ -2,6 +2,8 @@ import React from 'react'
 import data from './data.json'
 import {Album} from './Album.js'
 import {Header} from './Header'
+import './index.css'
+
 
 console.log(data)
 

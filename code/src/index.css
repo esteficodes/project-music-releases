@@ -28,6 +28,30 @@ width: 100%;
   color: white;
 }
 
+.icons {
+  position: absolute;
+  z-index: 5;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.dots-icon, .heart-icon {
+  width: 30px;
+}
+
+.play-icon {
+  width: 70px;
+}
+
+/*HOVER EFFECTS*/
+
+
 @media (min-width: 768px) {
 
   .main {

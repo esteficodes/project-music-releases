@@ -25,4 +25,4 @@ The focus of this assignment was to practice with React and an already given res
 
 <h2>View it live</h2> 📺
 
-You can take a look at our project here: 
+You can take a look at our project here: https://cranky-colden-77d5cc.netlify.app/
