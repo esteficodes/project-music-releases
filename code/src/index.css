@@ -28,7 +28,7 @@ width: 100%;
   color: white;
 }
 
-.icons {
+/*.icons {
   position: absolute;
   z-index: 5;
   width: 80%;
@@ -48,8 +48,12 @@ width: 100%;
 .play-icon {
   width: 70px;
 }
+*/
 
 /*HOVER EFFECTS*/
+.image:hover {
+  filter: brightness(0.20);
+}
 
 
 @media (min-width: 768px) {
