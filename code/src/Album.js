@@ -2,11 +2,15 @@ import React from 'react'
 
 export const Album = (props) => {
     return (
-        <div> 
+        <div className="card"> 
+          <div className="picture">
             <a href={props.albumurl}>         
-            <img src={props.picture} alt="album cover"/></a>  
+            <img className="image" src={props.picture} alt="album cover"/></a>
+            <div className="icons"></div>
+            <img className="dot-icon" src="/code/public/icons/dots.svg" alt="dot icon"/>
+            </div>  
             <h2>{props.name}</h2>
-            <a href={props.externalurls}>
+            <a className="link" href={props.externalurls}>
             <h3>{props.artist}</h3></a>           
         </div>
 

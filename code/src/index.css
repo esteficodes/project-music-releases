@@ -5,9 +5,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: black;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.main {
+display: grid;
+grid-template-columns: 1fr;
+}
+
+.image {
+width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 768px) {
+
+  .main {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+}
+
+@media(min-width: 1025px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
 }
