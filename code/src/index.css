@@ -40,17 +40,18 @@ color: white;
   color: #a0a0a0;
 }
 
-.artist-name:not(:first-child, :last-child)::before {
-  color: #a0a0a0;
+.artist-name:not(:first-child,:last-child)::before {
+  color: #A0A0A0;
   content:",";
 }
 
 .artist-name:last-child::before {
   content: "&";
-  color: #a0a0a0;
+  color: #A0A0A0;
 }
 
-.artist-name:only-child::before {content: "";}
+.artist-name:only-child::before {content:"";
+}
 
 .artist-name:hover {
   text-decoration: underline;

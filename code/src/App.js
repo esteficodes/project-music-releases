@@ -4,26 +4,24 @@ import {Album} from './Album.js'
 import {Header} from './Header'
 import './index.css'
 
-
 console.log(data)
 
 const albumArray = data.albums.items
 
-
-
 export const App = () => {
   return (
-  <> 
-    <Header />
+  <>
+  <Header/>
     <div className="main">
       {albumArray.map((album) => {
         return (  
-          <Album key={album.name} name={album.name} artist={album.artists[0].name} picture={album.images[0].url} externalurls={album.artists[0].external_urls.spotify} albumurl={album.external_urls.spotify}/>
-        )
-      })}
+          <Album key={album.name} name={album.name} picture={album.images[0].url} albumurl={album.external_urls.spotify} artist={album.artists.map((item) => 
+            <a className="link" key={item.name} href={item.external_urls.spotify}><h3 className="artist-name">{item.name}</h3></a>
+          )
+      }/>) })}
     </div>
-  </>
-  )
+    </>
+        )
 }
 
 
